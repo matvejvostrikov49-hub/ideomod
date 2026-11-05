@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "quickmute",
+  "version": "${version}",
+  "name": "Quick Mute",
+  "description": "Мод для быстрой выдачи мутов командой проекта",
+  "authors": ["YourTeam"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.yourproject.mod.ModInitializerClient"
+    ]
+  },
+  "mixins": [
+    "quickmute.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "1.21.x",
+    "fabric-api": "*"
+  }
+}
